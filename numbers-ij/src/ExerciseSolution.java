@@ -62,11 +62,11 @@ public class ExerciseSolution implements Exercises {
 
   @Override
   public IntegerGenerator createIntegerGenerator(int i, int i1) {
-    NUm
+    return new MyGenerator(i, i1);
   }
 
   @Override
   public IntegerGenerator createFilteredIntegerGenerator(IntegerGenerator integerGenerator, NumberFilter numberFilter) {
-    return null;
+    return new FilteredGenerator(integerGenerator, numberFilter);
   }
 }
